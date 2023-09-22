@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Accordian</title>
+</head>
+<body>
+    <div class="accordian-container">
+        <div class="accordian-title" id="toggle"  onclick="accordian()" ondblclick="off()">Accordian 1</div>
+        <div class="accordian-content" id="accordian-content-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis fugit magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+
+        <div class="accordian-title" onclick="accordians()" ondblclick="offf()">Accordian 2</div>
+        <div class="accordian-content" id="accordian-content-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis fugit magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+    </div>
+
+    <script>
+       
+
+        function accordian(){
+            // let a = document.getElementById("accordian-content-1");
+            // a.style.cssText += "display:block;"
+            // console.log(a)
+            var element = document.getElementById("accordian-content-1");
+            element.classList.toggle("mystyle");
+          
+        }
+        function accordians(){
+            // let b = document.getElementById("accordian-content-2");
+            // b.style.cssText += "display:block; "
+            var element = document.getElementById("accordian-content-2");
+            element.classList.toggle("mystyle");
+
+        }
+
+        // function off(){
+        //     let a = document.getElementById("accordian-content-1");
+        //     a.style.cssText += "display: none;"
+        // }
+        // function offf(){
+        //     let b = document.getElementById("accordian-content-2");
+        //     b.style.cssText += "display: none;"
+        // }
+    </script>
+</body>
+</html>
+
+<!-- function toggleAccordion(accordionNumber) {
+    let contentElement = document.getElementById("accordion-content-" + accordionNumber);
+    if (contentElement.style.display === "block") {
+        contentElement.style.display = "none";
+    } else {
+        contentElement.style.display = "block";
+    }
+} -->

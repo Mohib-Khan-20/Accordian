@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordian-container{
+    /* border: 1px solid black; */
+    width: 40%;
+    height: auto;
+    background-color: rgba(221, 221, 221, 0.904);
+    padding: 12px;
+    
+    
+}
+.accordian-title{
+    background-color:white ;
+    padding: 15px;
+    cursor: pointer;
+    border: 1px solid rgb(228, 203, 203);
+    border-bottom: 0;
+    transition: 0.5s;
+}
+.accordian-title:hover{
+    background-color: rgb(224, 217, 217);
+    
+}
+.accordian-content{
+    background-color: white;
+    padding-left: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+    display: none;
+    transition: 0.5s;
+}
+.mystyle{
+    display: block;
+}
+
